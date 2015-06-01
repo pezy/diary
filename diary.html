@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/diary/css/global.css">
+    <link rel="stylesheet" href="/diary/css/tomorrow.css">
+    <link rel="stylesheet" href="/diary/css/diary.css">
+    <script src="/diary/js/jquery-1.11.3.min.js" type="text/javascript"></script>
+    <script src="/diary/js/marked.min.js" type="text/javascript"></script>
+    <script language='javascript'>
+        function getUrlParameter(sParam)
+        {
+            var sPageURL = window.location.search.substring(1);
+            var sURLVariables = sPageURL.split('&');
+            for (var i = 0; i < sURLVariables.length; i++)
+            {
+                var sParameterName = sURLVariables[i].split('=');
+                if (sParameterName[0] == sParam)
+                {
+                    return sParameterName[1];
+                }
+            }
+        }
+        $(document).ready(function() {
+            document.title = getUrlParameter('title');
+        });
+    </script>
+</head>
+<body>
+<header class="header">
+    <div class="index"><a href="/diary/">Index</a></div>
+    <h1></h1>
+    <script>
+        $( 'h1').append(getUrlParameter('title'));
+    </script>
+</header>
+<div class="content"><div class="diary"></div></div>
+<script>
+    $.get( "/diary/" + getUrlParameter('path') + ".md", function(data) {
+        $( ".diary").html(marked(data));
+    });
+</script>
+</body>
+</html>
