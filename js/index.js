@@ -4,7 +4,8 @@ webpackJsonp([1], [function (t, e, n) {
         var t = new i({
             onSelect: function (t) {
                 var e = a(t);
-                window.open( "diary.html?path=" + e.format("YYYY/MM/YYYY-MM-DD") + "&title=" + e.format("Do.MMMM,YYYY"), "_blank")
+                window.location.href += "/../diary.html?path=" + e.format("YYYY/MM/YYYY-MM-DD") + "&title=" + e.format("Do.MMMM,YYYY");
+                //window.open( ), "_blank")
             },
             i18n: {
                 previousMonth: "&lt;&lt;",
@@ -16,6 +17,8 @@ webpackJsonp([1], [function (t, e, n) {
             minDate: new Date("2015-06-01"),
             maxDate: new Date
         });
-        document.getElementById("calendar").appendChild(t.el), document.querySelector(".pika-prev").textContent = "<<", document.querySelector(".pika-next").textContent = ">>"
+        document.getElementById("calendar").appendChild(t.el);
+        document.querySelector(".pika-prev").textContent = "<<";
+        document.querySelector(".pika-next").textContent = ">>";
     })
 }]);
