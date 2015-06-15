@@ -4,8 +4,9 @@ webpackJsonp([1], [function (t, e, n) {
         var t = new i({
             onSelect: function (t) {
                 var e = a(t);
-                window.location.href += "/../diary.html?path=" + e.format("YYYY/MM/YYYY-MM-DD") + "&title=" + e.format("Do.MMMM,YYYY");
-                //window.open( ), "_blank")
+                window.location.href += "/../diary.html?path=" + e.format("YYYY/MM/YYYY-MM-DD")
+                + "&title=" + e.format("Do.MMMM")
+                + "&year=" + e.format("YYYY");
             },
             i18n: {
                 previousMonth: "&lt;&lt;",
