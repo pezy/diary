@@ -1,5 +1,18 @@
 # My Tech Diary
 
+**Fork from [Joyee Cheung's diary](https://github.com/joyeecheung/diary)**
+
+Copyright © 2015 by [Joyee Cheung](https://github.com/joyeecheung)
+
+License: MIT
+
+**Difference**:
+
+1. Remove *diary generator `gulp`*.
+2. Just write markdown in `Year`/`Month` folder.
+
+-----
+
 Things to keep an eye on and some notes.
 
 ## Topics Summary
