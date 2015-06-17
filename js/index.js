@@ -1,6 +1,9 @@
 webpackJsonp([1], [function (t, e, n) {
     var i = n(1), a = n(2);
     window.addEventListener("load", function () {
+        var calendar = document.getElementById('calendar');
+        var lastDate = new Date(calendar.getAttribute('data-last-date'));
+
         var t = new i({
             onSelect: function (t) {
                 var e = a(t);
@@ -16,9 +19,11 @@ webpackJsonp([1], [function (t, e, n) {
                 weekdaysShort: ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"]
             },
             minDate: new Date("2015-06-01"),
-            maxDate: new Date
+            maxDate: lastDate,
+            defaultDate: lastDate,
+            setDefaultDate: true
         });
-        document.getElementById("calendar").appendChild(t.el);
+        calendar.appendChild(t.el);
         document.querySelector(".pika-prev").textContent = "<<";
         document.querySelector(".pika-next").textContent = ">>";
     })

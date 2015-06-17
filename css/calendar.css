@@ -1,119 +1,123 @@
 html {
-  font-size: 18px;
+    font-size: 18px;
 }
 
 .pika-single {
-  width: 20rem;
-  margin: 0 auto;
-  font-family: 'Trebuchet MS', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  border-top: 1px solid #E0E0E0;
-  border-top: 0.1rem solid #E0E0E0;
-  padding-top: 1rem;
+    width: 20rem;
+    margin: 0 auto;
+    font-family: 'Trebuchet MS', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    border-top: 1px solid #E0E0E0;
+    border-top: 0.1rem solid #E0E0E0;
+    padding-top: 1rem;
 }
 
 @media (max-width: 700px) {
-  .pika-single {
-    width: 100%;
-  }
+    .pika-single {
+        width: 100%;
+    }
 }
 
 .pika-single button {
-  font-family: 'Trebuchet MS', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-family: 'Trebuchet MS', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 .pika-title {
-  overflow: hidden;
-  text-align: center;
-  margin-bottom: 0.5rem;
+    overflow: hidden;
+    text-align: center;
+    margin-bottom: 0.5rem;
 }
 
 .pika-label {
-  display: inline;
-  /*width: 50%;*/
-  text-align: center;
+    display: inline;
+    /*width: 50%;*/
+    text-align: center;
 }
 
 .pika-label:first-of-type {
-  margin-right: 0.5rem;
+    margin-right: 0.5rem;
 }
 
 .pika-prev {
-  float: left;
-  content: '<';
+    float: left;
+    content: '<';
 }
 
 .pika-next {
-  float: right;
+    float: right;
 }
 
 button.is-disabled {
-  cursor: default;
+    cursor: default;
 }
 
 button.is-disabled:hover {
-  background: none;
+    background: none;
 }
 
 .pika-prev, .pika-next {
-  background: none;
-  border: none;
-  cursor: pointer;
-  width: 2rem;
-  height: 2rem;
-  border-radius: 50%;
-  -webkit-transition: all 0.2s ease-out;
-          transition: all 0.2s ease-out;
+    background: none;
+    border: none;
+    cursor: pointer;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    -webkit-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
 }
 
 .pika-prev:hover, .pika-next:hover {
-  background: #E0E0E0;
+    background: #E0E0E0;
 }
 
 .pika-label select {
-  display: none;
+    display: none;
 }
 
 .pika-table {
-  width: 100%;
+    width: 100%;
 }
 
 .pika-table td {
-  width: 2rem;
-  height: 3rem;
-  text-align: center;
+    width: 2rem;
+    height: 3rem;
+    text-align: center;
 }
 
 .pika-table button {
-  border: none;
-  width: 2rem;
-  height: 2rem;
-  font-size: 0.7rem;
-  -webkit-transition: all 0.2s ease-out;
-          transition: all 0.2s ease-out;
-  cursor: pointer;
-  background: none;
-  text-align: center;
-  background: #E0E0E0;
-  border-radius: 100%;
+    border: none;
+    width: 2rem;
+    height: 2rem;
+    font-size: 0.7rem;
+    -webkit-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+    cursor: pointer;
+    background: none;
+    text-align: center;
+    background: #E0E0E0;
+    border-radius: 100%;
 }
 
 .pika-table td.is-disabled button {
-  background: none;
-  cursor: default;
+    background: none;
+    cursor: default;
 }
 
 .pika-table td.is-disabled button:hover {
-  background: none;
-  color: inherit;
+    background: none;
+    color: inherit;
 }
 
 .pika-table td button:hover {
-  background: #5C5C5C;
-  color: white;
+    background: #5C5C5C;
+    color: white;
+}
+
+.is-selected button {
+    background: #5C5C5C;
+    color: white;
+    border-radius: 100%;
 }
 
 .is-today button {
-  background: #5C5C5C;
-  color: white;
-  border-radius: 100%;
+    border: 1px solid #FFB1B1;
 }
