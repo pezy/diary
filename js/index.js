@@ -2,7 +2,7 @@ webpackJsonp([1], [function (t, e, n) {
     var i = n(1), a = n(2);
     window.addEventListener("load", function () {
         var calendar = document.getElementById('calendar');
-        var lastDate = new Date(calendar.getAttribute('data-last-date'));
+        var lastDate = new Date();
 
         var t = new i({
             onSelect: function (t) {
